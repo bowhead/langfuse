@@ -5,6 +5,7 @@ import { VersionLabel } from "./VersionLabel";
 import { env } from "@/src/env.mjs";
 import { useUiCustomization } from "@/src/ee/features/ui-customization/useUiCustomization";
 import { PlusIcon } from "lucide-react";
+import { BowheadHealthLogo } from "@/src/components/BowheadHealthLogo";
 
 export const LangfuseIcon = ({
   size = 32,
@@ -49,14 +50,14 @@ const LangfuseLogotypeOrCustomized = ({ size }: { size: "sm" | "xl" }) => {
           )}
         />
         <PlusIcon size={size === "sm" ? 8 : 12} />
-        <LangfuseIcon size={size === "sm" ? 16 : 20} />
+        <BowheadHealthLogo size={size === "sm" ? 16 : 20} />
       </div>
     );
   }
 
   return (
     <div className="flex items-center">
-      <LangfuseIcon size={size === "sm" ? 16 : 20} />
+      <BowheadHealthLogo size={size === "sm" ? 16 : 20} />
       <span
         className={cn(
           "ml-2 font-mono font-semibold",

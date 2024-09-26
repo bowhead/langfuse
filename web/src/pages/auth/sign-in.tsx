@@ -1,5 +1,5 @@
 import { type GetServerSideProps } from "next";
-import { LangfuseIcon } from "@/src/components/LangfuseLogo";
+import { BowheadHealthLogo } from "@/src/components/BowheadHealthLogo";
 import { Button } from "@/src/components/ui/button";
 import {
   Form,
@@ -346,7 +346,7 @@ export default function SignIn({ authProviders, signUpDisabled }: PageProps) {
       </Head>
       <div className="flex flex-1 flex-col py-6 sm:min-h-full sm:justify-center sm:px-6 sm:py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
-          <LangfuseIcon className="mx-auto" />
+          <BowheadHealthLogo className="mx-auto" />
           <h2 className="mt-4 text-center text-2xl font-bold leading-9 tracking-tight text-primary">
             Sign in to your account
           </h2>

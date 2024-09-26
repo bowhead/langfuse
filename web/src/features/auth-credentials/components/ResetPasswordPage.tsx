@@ -25,6 +25,7 @@ import { isEmailVerifiedWithinCutoff } from "@/src/features/auth-credentials/lib
 import Link from "next/link";
 import { ErrorPage } from "@/src/components/error-page";
 import { usePostHogClientCapture } from "@/src/features/posthog-analytics/usePostHogClientCapture";
+import { BowheadHealthLogo } from "@/src/components/BowheadHealthLogo";
 
 const resetPasswordSchema = z
   .object({
@@ -117,7 +118,7 @@ export function ResetPasswordPage({
       <div className="flex flex-1 flex-col py-6 sm:min-h-full sm:justify-center sm:px-6 sm:py-12 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-md">
           <Link href="/">
-            <LangfuseIcon className="mx-auto" />
+            <BowheadHealthLogo className="mx-auto" />
           </Link>
           <h2 className="mt-4 text-center text-2xl font-bold leading-9 tracking-tight text-primary">
             Reset your password
